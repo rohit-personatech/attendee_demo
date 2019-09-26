@@ -25,7 +25,7 @@ def generate_random():
             'isDeleted': True if x % 7 == 0 else False
         })
 
-    with open('data.txt', 'w') as outfile:
+    with open('attendee.json', 'w') as outfile:
         json.dump(data, outfile)
 
     print "done"
