@@ -22,7 +22,7 @@ def generate_random():
             'jobLevel': random_generator(size=10),
             'jobTitle': random_generator(size=15),
             'email': random_generator(size=20),
-            'isDeleted': False if x % 7 == 0 else True
+            'isDeleted': True if x % 7 == 0 else False
         })
 
     with open('data.txt', 'w') as outfile:
