@@ -9,10 +9,9 @@ def random_generator(size=6, chars=string.ascii_uppercase + string.digits):
 
 def generate_random():
     print "generate_random"
-    data = {}
-    data['people'] = []
+    data = []
     for x in range(10000):
-        data['people'].append({
+        data.append({
             'index': x,
             'id': random_generator(size=10),
             'picture': random_generator(size=30),
