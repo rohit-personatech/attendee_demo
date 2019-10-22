@@ -14,7 +14,7 @@ def generate_random():
         data.append({
             'index': x,
             'id': random_generator(size=10),
-            'picture': random_generator(size=30),
+            'profileImage': random_generator(size=30),
             'name': random_generator(size=15),
             'profileFieldsHidden': False if x % 3 == 0 else True,
             'company': random_generator(size=10),
